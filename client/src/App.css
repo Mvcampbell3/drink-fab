@@ -1,0 +1,46 @@
+*{
+  box-sizing: border-box;
+}
+
+body, html, h1, h2, h3, h4, h5, h6, p, ul, li {
+  margin: 0;
+  padding: 0;
+}
+
+.backgroundMain{
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  background-attachment: fixed;
+  background: url("https://images.pexels.com/photos/1283219/pexels-photo-1283219.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+  background-position: center;
+  background-size: cover;  
+  z-index: -1;
+}
+
+.bradWarning{
+  width: 370px;
+  color: white;
+  background-color: rgba(00,00,00,.8);
+  padding: 15px;
+  border-radius: 15px;
+  position: relative;
+  top: -25vh;
+  left: calc(50% - 185px);
+  animation-name: fall;
+  animation-delay: .5s;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+.bradWarning h1{
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-weight: 300;
+  font-size: 30px;
+  text-align: center;
+}
+
+@keyframes fall{
+  0% {top: -25vh}
+  100% {top: 25vh}
+}
